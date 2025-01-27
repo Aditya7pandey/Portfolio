@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pandey Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #191919;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        nav ul li a.active {
+            color: #ADFFEF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="Mleft">
+                <p class="greeting green">Hello, I'm</p>
+                <h1>Aditya Pandey</h1>
+                <span id="element" class="green"></span>
+                <div class="home">
+                    <button class="btn1">Download CV</button>
+                    <div class="social-links">
+                        <a href="https://x.com/Adi_insights" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/99adityapandey/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/Aditya7pandey" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Mright">
+                <img src="./image/image-removebg-preview.png" alt="Aditya Pandey" />
+            </div>
+        </section>
+    </main>
+
+    <section id="about">
+        <h2 class="heading-text green">About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis recusandae dolorem at nostrum delectus...</p>
+    </section>
+
+    <section id="skills">
+        <h2 class="heading-text green">My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">
+                <b>HTML</b>
+                <span>95%</span>
+                <div class="progress"><span style="width:95%"></span></div>
+            </div>
+            <div class="skill">
+                <b>CSS</b>
+                <span>91%</span>
+                <div class="progress"><span style="width:91%"></span></div>
+            </div>
+            <div class="skill">
+                <b>JavaScript</b>
+                <span>85%</span>
+                <div class="progress"><span style="width:85%"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="heading-text green">Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A portfolio website project.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A responsive e-commerce website design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="heading-text green">Contact Me</h2>
+        <p>Email: <a href="adityapandey18501@gmail.com">adityapandey18501@gmail.com</a></p>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('#element', {
+            strings: ['a Backend Developer.', 'an Aspiring Software Engineer.'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+</html>

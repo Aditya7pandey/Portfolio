@@ -1,0 +1,236 @@
+General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #191919;
+    color: white;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #ADFFEF;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* background-color: ; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .left {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ADFFEF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ADFFEF;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+.Mleft {
+    max-width: 50%;
+    margin: 10%;
+    /* font-size: 2rem; */
+}
+
+.Mleft .greeting {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Mleft h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Mright img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button.btn1 {
+    background-color: transparent;
+    color: #ADFFEF;
+    border: 2px solid #ADFFEF;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn1:hover {
+    background-color: #ADFFEF;
+    color: black;
+}
+
+/* Social Links */
+.social-links{
+    margin-top: 5px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+    font-size: 2.5rem;
+}
+
+.social-links a:hover {
+    color: #ADFFEF;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.heading-text {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #ADFFEF;
+}
+
+/* Skills Section */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 45%;
+    margin: 1rem;
+}
+
+.skill b {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.skill .progress {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.skill .progress span {
+    display: block;
+    height: 100%;
+    background: #ADFFEF;
+    width: 0;
+    animation: grow 2s forwards;
+}
+
+@keyframes grow {
+    to {
+        width: var(--progress-width);
+    }
+}
+
+/* Projects Section */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background: #262626;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+#contact a {
+    color: #ADFFEF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Mleft {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
